@@ -1,14 +1,12 @@
 var chai = require('chai');
-var expect = require('chai').expect;
-
+var expect = chai.expect;
+var fizzBuzz = require('../index');
 
 describe('fizzBuzz', function(){
     it('returns fizz if 3', function(){
-        expect(3).to.equal(3);
-    });
 
-    it('returns buzz if 5')
-
-    it('returns fizzBuzz if 3 or 5')
-
+        var expectedResult = 'fizz';
+        var actualResult = fizzBuzz();
+        expect(actualResult).to.equal(expectedResult);
+    })
 });
